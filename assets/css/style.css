@@ -1,3 +1,6 @@
+/* foratting for general parts*/
+
+
 body, html {
 	font-family: 'Abril Fatface', cursive;
 	font-family: 'Ovo', serif;
@@ -6,11 +9,48 @@ body, html {
 	padding: 0px;
 	height: 100%;
 	width: 100%;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 a {
 	text-decoration: none;
 }
 
+p {
+	font-family: 'Abril Fatface', cursive;
+	font-family: 'Ovo', serif;
+	font-size: 24px;
+	line-height: normal;
+	opacity: 1;
+	text-align: center;
+}
+
+ul {
+	font-family: Goudy Bookletter 1911;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 140%;
+	font-size: 24px;
+	text-indent: 5px;
+	padding-left: 40px;
+
+}
+
+/* back to top button */
+
+#topbutton {
+	position: fixed;
+	bottom: 10px;
+	left: 35px;
+	-webkit-font-smoothing: antialiased;
+	color: black;
+}
+
+#topbutton:hover {
+	transition-duration: .2s;
+	color: white;
+}
+/* container and name of page*/ 
 #container{
 	position: relative;
 	width: 100%;
@@ -35,10 +75,9 @@ a {
 	font-weight: normal;
 	line-height: 108px;
 	font-size: 100px;
-
 	color: #000000;
 }
-
+/* nav bar */
 nav {
 	position: absolute;
 	height: 84px;
@@ -59,17 +98,14 @@ nav {
 .icon {
 	-webkit-font-smoothing: antialiased;
 	color: black;
-	
-
+}
+.icon:hover {
+	transition-duration: .2s;
+	color: #ffa0ad;
+	size: 200%;
 }
 
-
-#prof {
-	position: relative;
-	left: 58%;
-	
-}
-
+/* menu */
 #menu {
 	position: absolute;
 	height:200px;
@@ -80,7 +116,6 @@ nav {
 	padding: 8px;
 	outline: black solid 2px;
 }
-
 #title {
 	font-family: Goudy Bookletter 1911;
 	width:300px;
@@ -91,13 +126,33 @@ nav {
 	text-align: center;
 }
 
+.label {
+	color: black;
+}
+
+.label:hover {
+	transition-duration: .4s;
+	color: #ffa0ad;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/* profile pic */
+#prof {
+	position: relative;
+	left: 58%;
+	
+}
+
+/*  general section formatting*/
+
 .sectitle {
 	font-family: Goudy Bookletter 1911;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
 	font-size: 36px;
-	padding-left: 20px;
+	padding-left: 40px;
 	padding-top: 40px;
 }
 
@@ -105,20 +160,7 @@ nav {
 	width: 1340px;
 	height: 25%;
 }
-
-.about {
-	padding-top: 60px;
-}
-
-#bio {
-	position: relative;
-	top: 15%;
-	left: 10%;
-	height: 40%;
-	width: 60%;
-	outline: black solid 2px;
-
-}
+ /* background image formatting for all sections*/
 .image1 {
 	position: absolute;
 	width: 940px;
@@ -132,7 +174,7 @@ nav {
 	width: 940px;
 	height: 700px;
 	left: 480px;
-	top: 52%;
+	top: 51%;
 	opacity: .4;
 }
 .image3 {
@@ -140,18 +182,130 @@ nav {
 	width: 940px;
 	height: 700px;
 	left: 480px;
-	top: 80%;
+	top: 76%;
 	opacity: .4;
 }
 
-ul {
+/* about section */
+
+.about {
+	padding-top: 60px;
+}
+
+#bio {
+	position: relative;
+	z-index: 2;
+	top: 15%;
+	left: 10%;
+	height: 40%;
+	width: 60%;
+	outline: black solid 2px;
+	background-color: white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	opacity: .8;
+}
+
+
+/* experience formatting */
+#resumecontainer {
+	position: relative;
+	z-index: 2;
+	outline: black solid 2px;
+	top:60px;
+	left:12%;
+	width: 20%;
+	height: 35%;
+	background: white;
+}
+
+.resume {
 	font-family: Goudy Bookletter 1911;
 	font-style: normal;
 	font-weight: normal;
-	line-height: 140%;
-	font-size: 24px;
-	text-indent: 5px;
-	padding-left: 40px;
-
+	line-height: 150%;
+	font-size: 30px;
+	text-align: center;
+	padding-right: 40px;
+	padding-top: 20px;
 }
+.resume:hover {
+	transition-duration: .4s;
+	color: #ffa0ad;
+	font-weight: bold;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+#resumepopup {
+	position: relative;
+	z-index: 10;
+	opacity: 1;
+	outline: black solid 1px;
+	left: 600px;
+	bottom: 900px;
+	height: 560px;
+	width: 640px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.resheader {
+	line-height: normal;
+	text-align: left;
+	font-size:  28px;
+	font-weight: bolder;
+}
+.resheader:hover {
+	transition-duration: .4s;
+	color: #ffa0ad;
+	font-weight: bold;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.resinner {
+	font-style: italic;
+	line-height: 90%;
+	text-align: left;
+	text-indent: 5px;
+	font-weight: lighter;
+	font-size: 24px;
+}
+.resinner2 {
+	font-size: 20px;
+}
+
+ .w1, .w2, .w3, .w4, .w5 { display: none; }
+
+
+#education { display: none; }
+
+#activities { display: none; }
+
+#work { display: none; }
+
+#skills { display: none; }
+
+#interests { display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
