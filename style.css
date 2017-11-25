@@ -1,0 +1,157 @@
+body, html {
+	font-family: 'Abril Fatface', cursive;
+	font-family: 'Ovo', serif;
+	background-color: #FFD3D9;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	height: 4000px;
+	left: 100px;
+	top: 100px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+#name {
+	position: relative;
+	height: 290px;
+	left: 124px;
+	right: 636px;
+	top: 172px;
+
+
+	font-family: Abril Fatface;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 108px;
+	font-size: 100px;
+
+	color: #000000;
+}
+
+nav {
+	position: absolute;
+	height: 84px;
+	width: 620px;
+	left: 60px;
+	right: 600px;
+	top: 400px;
+	outline: black solid 2px;
+}
+
+.navlink {
+	position: relative;
+	display: inline-block;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+.icon {
+	-webkit-font-smoothing: antialiased;
+	color: black;
+	
+
+}
+
+
+#prof {
+	position: relative;
+	left: 58%;
+	
+}
+
+#menu {
+	position: absolute;
+	height:200px;
+	width:300px;
+	top: 640px;
+	left: 60px;
+	padding-top: 4px;
+	padding: 8px;
+	outline: black solid 2px;
+}
+
+#title {
+	font-family: Goudy Bookletter 1911;
+	width:300px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 36px;
+	text-align: center;
+}
+
+.sectitle {
+	font-family: Goudy Bookletter 1911;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 36px;
+	padding-left: 20px;
+	padding-top: 40px;
+}
+
+.section {
+	width: 1340px;
+	height: 25%;
+}
+
+.about {
+	padding-top: 60px;
+}
+
+#bio {
+	position: relative;
+	top: 15%;
+	left: 10%;
+	height: 40%;
+	width: 60%;
+	outline: black solid 2px;
+
+}
+.image1 {
+	position: absolute;
+	width: 940px;
+	height: 700px;
+	left: 480px;
+	top: 26%;
+	opacity: .4;
+}
+.image2 {
+	position: absolute;
+	width: 940px;
+	height: 700px;
+	left: 480px;
+	top: 52%;
+	opacity: .4;
+}
+.image3 {
+	position: absolute;
+	width: 940px;
+	height: 700px;
+	left: 480px;
+	top: 80%;
+	opacity: .4;
+}
+
+ul {
+	font-family: Goudy Bookletter 1911;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 140%;
+	font-size: 24px;
+	text-indent: 5px;
+	padding-left: 40px;
+
+}
+
