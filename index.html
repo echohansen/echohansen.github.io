@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Index</title>
-<!-- comment template -->
+<!-- comment -->
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Ovo" rel="stylesheet">
 <link rel="stylesheet" href="assets/img/font-awesome/css/font-awesome.min.css">
 
@@ -10,48 +10,92 @@
 <body>
 	<div id='background'>
 		<div id='container'>
-			<h2>echo hansen</h2>
+			<div id='name'>echo <br>&ensp; hansen</div>
 			<nav>
 				<!-- using font awesome for icons, linking w tool tips
 					TO DO: activate tool tips, properly link fa for icons, figure out how to add properly in css-->
 				<ul>
 					<li class ='navlink' data-tooltip='facebook'>
-						<a href='https://www.facebook.com/echojhansen' target='_blank' class ='icon fa-facebook'></a>
-
+						<a href='https://www.facebook.com/echojhansen' target="_blank" aria-label='facebook'>
+							<i class="icon fa fa-facebook fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
 					</li>
+
 					<li class ='navlink' data-tooltip='email'>
-						<a href='mailto:echohansen@berkeley.edu' target='_blank' class ='icon fa-envelope-o'></a>
+						<a href='mailto:echohansen@berkeley.edu' target="_blank" aria-label='email'>
+							<i class="icon fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
 					</li>
 					<li class ='navlink' data-tooltip='github'>
-						<a href='https://github.com/echoanecho' target='_blank' class ='icon fa-github'></a>
+						<a href='https://github.com/echohansen' target="_blank" aria-label='github'>
+							<i class="icon fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
 					</li>
 					<li class ='navlink' data-tooltip='linkedin'>
-						<a href='https://www.linkedin.com/in/echohansen/' target='_blank' class ='icon fa-linkedin'></a>
+						<a href='https://www.linkedin.com/in/echohansen/' target="_blank" aria-label='linkedin'>
+							<i class="icon fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
 					</li>
 				</ul>
 			</nav>
-			<img id='prof' src="assets/img/hot af mirror selfie.JPG">
+			<img id='prof' src="assets/img/hot af mirror selfie.JPG" height='692px' width="492px">
 			<!-- box of menu options -->
 			<div id='menu'>
 				<div id='title'>menu</div>
 				<ul style="list-style-type:none">
 					<li>
-						<a href="#about"><span>i. about me</span></a>
+						<a href="#about"><span class='label'>i. about me</span></a>
 					</li>
 					<li>
-						<a href="#projects"><span>&ensp;ii. projects</span></a>
+						<a href="#projects"><span class='label'>&emsp;ii. projects</span></a>
 					</li>
 					<li>
-						<a href="#experience"><span>&ensp;&ensp;iii. experience</span></a>
+						<a href="#experience"><span class='label'>&emsp;&emsp;iii. experience</span></a>
 					</li>
 					<li>
-						<a href="#contact"><span>&ensp;&ensp;&ensp;iv. contact</span></a>
+						<a href="#contact"><span class='label'>&emsp;&emsp;&emsp;iv. contact</span></a>
 					</li>
 				</ul>
 			</div>
-			<div class='section'>i. about me</div>
-			
+			<!-- SECOND PAGE begins w end of menu, then ends w about me;
+				compressed version of other sections so not using 'section' class to style-->
+			<a name='about'></a>
+			<div class='section about'>
+				<div class='sectitle'>i. about me</div>
+				<div id='bio'>
+					<p>Will put shit here when I have time gdamn</p>
+				</div>
+				<img class='image1' src="assets/img/background.jpg">
+			</div>
+ 
+			<a name='projects'></a>
+			<div class='section proj'>
+				<div class="sectitle">ii. projects</div>
+				<img class='image2' src="assets/img/background.jpg">
 
+				<div id='carouselcontainer'>
+					<div class='project big'></div>
+					<div class='project small'></div>
+					<div class='project small'></div>
+					<div class='arrow button'></div>
+				</div>
+			</div>
+			<a name='experience'></a>
+			<div class='section exp'>
+				<div class="sectitle">iii. experience</div>
+				<img class='image3' src="assets/img/background.jpg">
+				<div id='resumecontainer'>
+					<ul style="list-style-type: none">
+						<li>education</li>
+						<li>activities</li>
+						<li>work</li>
+						<li>skills</li>
+						<li>interests</li>
+					</ul>
+				</div>		
+			</div>
+			
+			<!-- exclude the contact section, maybe? or find form format html and css elsewhere -->
 
 
 
