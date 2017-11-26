@@ -257,10 +257,10 @@ nav {
 	opacity: 1;
 	outline: black solid 1px;
 	left: 600px;
-	bottom: 900px;
-	height: 560px;
+	bottom: 920px;
+	height: 600px;
 	width: 640px;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-right: 10px;
 	display: none;
 
@@ -295,7 +295,7 @@ nav {
 	font-size: 20px;
 }
 
- .w1, .w2, .w3, .w4, .w5 { display: none; }
+.inactive { display: none; }
 
 
 #education { display: none; }

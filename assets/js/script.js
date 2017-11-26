@@ -3,6 +3,9 @@ $(document).ready(function() {
 
 //click on item in experience section, will bring up corresponding resume info
 $('.resume').click(function() {
+	$('.resinner2').each(function() {
+		$(this).addClass('inactive');
+	});
 
 	// jQuery Function Number 1 .text()
 	let name = $(this).text();
@@ -43,6 +46,53 @@ $('.resume').click(function() {
 	//EVENTUALLY LINK ALL OF THE RESUME HEADER BULLETS TO ACTUSL PLACES
 });
 
+//open up subtext under work experience when header is clicked
+$('.resheader').click(function() {
+	//sloppy ik im sorry ok i dont wanna parse rn goddamn
+	$('.resinner2').each(function() {
+		$(this).addClass('inactive');
+	});
+	$('.resinner').each(function() {
+		$(this).addClass('inactive');
+	});
+
+	if($(this).hasClass('1')) {
+
+		$('.w1').each(function () {
+			//jQuery Function Number 5 .removeClass()
+			$(this).removeClass('inactive');
+		});
+	}
+	if($(this).hasClass('2')) {
+		$('.w2').each(function () {
+			$(this).removeClass('inactive');
+		});
+	}
+	if($(this).hasClass('3')) {
+		$('.w3').each(function () {
+			$(this).removeClass('inactive');
+		});
+	}
+	if($(this).hasClass('4')) {
+		$('.w4').each(function () {
+			$(this).removeClass('inactive');
+		});
+	}
+	if($(this).hasClass('5')) {
+		$('.w5').each(function () {
+			$(this).removeClass('inactive');
+		});
+	}
+
+});
+
+
+
+
+
+
+
+
 //back to top button now has smooth scroll; code from voidynullness.net
 $('#topbutton').click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -51,8 +101,10 @@ $('#topbutton').click(function() {
 
 //smooth scroll for the anchor links within the site
 //based on distance from top of browser bc everything else was fucking tricky
+//jQuery Function Number 7 .click()
 $('a[href^="#"]').click(function () {
-	//jQuery Function Number 5 .hasClass()
+
+	//jQuery Function Number 6 .hasClass()
 	if ($(this).hasClass('abt')) {
 		$('html, body').animate({scrollTop: '+1090px'}, 800);
 	} else if ($(this).hasClass('proj')) {
