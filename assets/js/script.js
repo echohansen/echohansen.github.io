@@ -6,6 +6,9 @@ $('.resume').click(function() {
 	$('.resinner2').each(function() {
 		$(this).addClass('inactive');
 	});
+	$('.resinner').each(function() {
+		$(this).removeClass('inactive');
+	});
 
 	// jQuery Function Number 1 .text()
 	let name = $(this).text();
@@ -48,54 +51,59 @@ $('.resume').click(function() {
 
 //open up subtext under work experience when header is clicked
 $('.resheader').click(function() {
-	//sloppy ik im sorry ok i dont wanna parse rn goddamn
-	$('.resinner2').each(function() {
-		$(this).addClass('inactive');
-	});
-	$('.resinner').each(function() {
-		$(this).addClass('inactive');
-	});
 
-	if($(this).hasClass('1')) {
 
-		$('.w1').each(function () {
-			//jQuery Function Number 5 .removeClass()
-			$(this).removeClass('inactive');
-		});
-	}
-	if($(this).hasClass('2')) {
-		$('.w2').each(function () {
-			$(this).removeClass('inactive');
-		});
-	}
-	if($(this).hasClass('3')) {
-		$('.w3').each(function () {
-			$(this).removeClass('inactive');
-		});
-	}
-	if($(this).hasClass('4')) {
-		$('.w4').each(function () {
-			$(this).removeClass('inactive');
-		});
-	}
-	if($(this).hasClass('5')) {
-		$('.w5').each(function () {
-			$(this).removeClass('inactive');
-		});
-	}
+		if($(this).hasClass("open")) {
+			$(this).addClass('closed');
+				$(this).removeClass('open');
+
+			$('.resinner2').each(function() {
+				$(this).addClass('inactive');
+				
+			});
+		} else {
+			$(this).removeClass('closed');
+			$(this).addClass('open');
+			//sloppy ik im sorry ok i dont wanna parse rn goddamn
+			$('.resinner2').each(function() {
+				$(this).addClass('inactive');
+			});
+
+			if($(this).hasClass('1')) {
+
+				$('.w1').each(function () {
+					//jQuery Function Number 5 .removeClass()
+					$(this).removeClass('inactive');
+				});
+			}
+			if($(this).hasClass('2')) {
+				$('.w2').each(function () {
+					$(this).removeClass('inactive');
+				});
+			}
+			if($(this).hasClass('3')) {
+				$('.w3').each(function () {
+					$(this).removeClass('inactive');
+				});
+			}
+			if($(this).hasClass('4')) {
+				$('.w4').each(function () {
+					$(this).removeClass('inactive');
+				});
+			}
+			if($(this).hasClass('5')) {
+				$('.w5').each(function () {
+					$(this).removeClass('inactive');
+				});
+			}
+		}
 
 });
 
 
-
-
-
-
-
-
 //back to top button now has smooth scroll; code from voidynullness.net
 $('#topbutton').click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;
 });
 
@@ -109,7 +117,7 @@ $('a[href^="#"]').click(function () {
 		$('html, body').animate({scrollTop: '+1090px'}, 800);
 	} else if ($(this).hasClass('proj')) {
 		$('html, body').animate({scrollTop: '+2080px'}, 800);
-	} else {
+	} else if ($(this).hasClass('exp')){
 		$('html, body').animate({scrollTop: '+3080px'}, 800);
 	}
 	});

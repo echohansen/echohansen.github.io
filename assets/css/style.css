@@ -167,7 +167,7 @@ nav {
 	height: 700px;
 	left: 480px;
 	top: 26%;
-	opacity: .4;
+	opacity: .8;
 }
 .image2 {
 	position: absolute;
@@ -175,7 +175,7 @@ nav {
 	height: 700px;
 	left: 480px;
 	top: 51%;
-	opacity: .4;
+	opacity: .8;
 }
 .image3 {
 	position: absolute;
@@ -184,7 +184,7 @@ nav {
 	height: 700px;
 	left: 480px;
 	top: 76%;
-	opacity: .2;
+	opacity: .4;
 }
 
 .image4 {
@@ -194,7 +194,24 @@ nav {
 	height: 700px;
 	left: 480px;
 	top: 76%;
-	opacity: .2;
+	opacity: .4;
+
+}
+
+#comingsoon {
+	position: absolute;
+	width: 940px;
+	height: 700px;
+	left: 20%;
+	top: 58%;
+	
+	font-family: Abril Fatface;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 108px;
+	font-size: 100px;
+	color: #000000;
+
 
 }
 
