@@ -109,7 +109,7 @@ nav {
 #menu {
 	position: absolute;
 	height:200px;
-	width:300px;
+	width:320px;
 	top: 640px;
 	left: 60px;
 	padding-top: 4px;
@@ -184,7 +184,7 @@ nav {
 	height: 700px;
 	left: 480px;
 	top: 76%;
-	opacity: .4;
+	opacity: .2;
 }
 
 .image4 {
@@ -194,7 +194,7 @@ nav {
 	height: 700px;
 	left: 480px;
 	top: 76%;
-	opacity: .4;
+	opacity: .2;
 
 }
 
@@ -273,6 +273,7 @@ nav {
 	font-size:  28px;
 	font-weight: bolder;
 	cursor: auto;
+	padding: 5px;
 }
 .resheader:hover {
 	transition-duration: .4s;
@@ -284,7 +285,7 @@ nav {
 
 .resinner {
 	font-style: italic;
-	line-height: 90%;
+	line-height: 100%;
 	text-align: left;
 	text-indent: 5px;
 	font-weight: lighter;

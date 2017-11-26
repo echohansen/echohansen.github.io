@@ -16,6 +16,8 @@ $('.resume').click(function() {
 
 		// jQuery Function Number 3 .fadeOut()
 		$('.image4').fadeOut(1000);
+		//normalize
+		$('.image3').css('opacity', .4);
 		//change zindex so if statement is never entered again
 		$('.image4').css('z-index', 0);
 
@@ -47,7 +49,8 @@ $('#topbutton').click(function() {
     return false;
 });
 
-
+//smooth scroll for the anchor links within the site
+//based on distance from top of browser bc everything else was fucking tricky
 $('a[href^="#"]').click(function () {
 	//jQuery Function Number 5 .hasClass()
 	if ($(this).hasClass('abt')) {
@@ -57,7 +60,6 @@ $('a[href^="#"]').click(function () {
 	} else {
 		$('html, body').animate({scrollTop: '+3080px'}, 800);
 	}
-
 	});
 
 
