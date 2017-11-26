@@ -48,29 +48,22 @@ $('#topbutton').click(function() {
 });
 
 
+$('a[href^="#"]').click(function () {
+	//jQuery Function Number 5 .hasClass()
+	if ($(this).hasClass('abt')) {
+		$('html, body').animate({scrollTop: '+1090px'}, 800);
+	} else if ($(this).hasClass('proj')) {
+		$('html, body').animate({scrollTop: '+2080px'}, 800);
+	} else {
+		$('html, body').animate({scrollTop: '+3080px'}, 800);
+	}
+
+	});
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//end page
 });
+
