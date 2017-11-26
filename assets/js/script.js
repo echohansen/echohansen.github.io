@@ -2,32 +2,35 @@ $(document).ready(function() {
 // all your jQuery code goes in here!
 
 //click on item in experience section, will bring up corresponding resume info
+//jQuery Function Number 1 .click()
 $('.resume').click(function() {
 	$('.resinner2').each(function() {
+		//jQuery Function Number 2 .addClass()
 		$(this).addClass('inactive');
 	});
 	$('.resinner').each(function() {
+		//jQuery Function Number 3 .removeClass()
 		$(this).removeClass('inactive');
 	});
 
-	// jQuery Function Number 1 .text()
+	//jQuery Function Number 4 .text()
 	let name = $(this).text();
 
 
-	// jQuery Function Number 2 .css()
+	// jQuery Function Number 5 .css()
 	if($('.image4').css('z-index') == 10) {
 
 		//fade out the background iage stacked over the text box
 		//fade in text box
 
-		// jQuery Function Number 3 .fadeOut()
+		// jQuery Function Number 6 .fadeOut()
 		$('.image4').fadeOut(1000);
 		//normalize
 		$('.image3').css('opacity', .4);
 		//change zindex so if statement is never entered again
 		$('.image4').css('z-index', 0);
 
-		// jQuery Function Number 4 .fadeIn()
+		// jQuery Function Number 7 .fadeIn()
 		$('#resumepopup').fadeIn(1200);
 
 		//fade in correct text
@@ -72,7 +75,6 @@ $('.resheader').click(function() {
 			if($(this).hasClass('1')) {
 
 				$('.w1').each(function () {
-					//jQuery Function Number 5 .removeClass()
 					$(this).removeClass('inactive');
 				});
 			}
@@ -103,16 +105,16 @@ $('.resheader').click(function() {
 
 //back to top button now has smooth scroll; code from voidynullness.net
 $('#topbutton').click(function() {
+	//jQuery Function Number 8 .click()
     $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;
 });
 
 //smooth scroll for the anchor links within the site
 //based on distance from top of browser bc everything else was fucking tricky
-//jQuery Function Number 7 .click()
 $('a[href^="#"]').click(function () {
 
-	//jQuery Function Number 6 .hasClass()
+	//jQuery Function Number 9 .hasClass()
 	if ($(this).hasClass('abt')) {
 		$('html, body').animate({scrollTop: '+1090px'}, 800);
 	} else if ($(this).hasClass('proj')) {
@@ -121,11 +123,6 @@ $('a[href^="#"]').click(function () {
 		$('html, body').animate({scrollTop: '+3080px'}, 800);
 	}
 	});
-
-
-
-
-
 //end page
 });
 
